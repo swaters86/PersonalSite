@@ -1,0 +1,28 @@
+@import url("http://fonts.googleapis.com/css?family=Righteous");
+svg {
+  padding: 0;
+  margin: 0;
+  background: #000; }
+
+line {
+  stroke-width: 1;
+  stroke: #57B4FB;
+  stroke-opacity: .7; }
+
+#full-name {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 5;
+  text-transform: uppercase;
+  stroke-width: 1;
+  stroke: #fff;
+  fill: url("/svg/header.svg#gradient-1");
+  font-size: 6em; }
+
+#title {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 5;
+  text-transform: uppercase;
+  stroke-width: 1;
+  stroke: #fff;
+  fill: url("/svg/header.svg#gradient-1");
+  font-size: 2em; }

@@ -1,0 +1,20 @@
+div(id='portfolio',class='container-fluid')
+ div(class='row')
+  div(class='page-header')
+   h2(class='text-center text-uppercase') portfolio
+div(class='container',ng-controller='portfolioCTRL')
+ div(class='row portfolio')
+  div(class='col-md-12')
+   p(class='lead') These are just a few sites that I designed and developed while working at NEWSCYCLE Solutions and Rapid Technology Solutions  as well as ones I developed for myself, family, and friends. 
+   p(class='bg-warning')
+    <strong>Note:</strong> I've designed and developed several sites at Rapid Technology Solutions during my 3 years working there. Unfortunately, I couldn't retrieve any copies of the websites files for the other sites I developed so this is all I have right now.
+   br
+  for portfolioItem in portfolioItems
+   div(class='col-md-4')
+    div(class='thumbnail')
+     img(src='#{portfolioItem.imgSrc}',alt='#{portfolioItem.imgAlt}')
+     div(class='caption')
+      h3 
+      a(href='#{portfolioItem.url}',title='Visit the Website') #{portfolioItem.captionTitle}
+      p  #{portfolioItem.captionText}
+     

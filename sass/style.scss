@@ -1,0 +1,334 @@
+/*!
+ * Author: Steve Waters
+ *
+ * Date: 20161108
+ *
+ * Frameworks & Libraries: 
+ *  Google Font API
+ *	Normalize CSS: http://necolas.github.io/normalize.css
+ * 	FontAwesome: http://fontawesome.io
+ *  Bootstrap v3.3.7: http://getbootstrap.com 
+ *  AngularJS v1.5.8: https://angularjs.org
+ *  jQuery v3.1.0: http://jquery.com/download/
+ *  GulpJS: http://gulpjs.com/
+ *  JSStanrd: http://standardjs.com/rules.html
+ *
+*/
+
+
+// Mixins: Rounded Corners
+@mixin border-radius($radius, $position) {
+
+  @if $position == bottomLeft {
+    -webkit-border-bottom-left-radius: $radius;
+    -moz-border-bottom-left-radius: $radius;
+    -o-border-bottom-left-radius: $radius;
+    -ms-border-bottom-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+  }
+  
+  @if $position == bottomRight {
+    -webkit-border-bottom-right-radius: $radius;
+    -moz-border-bottom-right-radius: $radius;
+    -o-border-bottom-right-radius: $radius;
+    -ms-border-bottom-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+  }
+
+  @if $position == topLeft {
+    -webkit-border-top-left-radius: $radius;
+    -moz-border-top-left-radius: $radius;
+    -o-border-top-left-radius: $radius;
+    -ms-border-top-left-radius: $radius;
+    border-top-left-radius: $radius;
+  }
+
+  @if $position == topRight {
+    -webkit-border-top-right-radius: $radius;
+    -moz-border-top-right-radius: $radius;
+    -o-border-top-right-radius: $radius;
+    -ms-border-top-right-radius: $radius;
+    border-top-right-radius: $radius;
+  }
+
+  @if $position == all {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -o-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+  }
+
+}
+
+
+@mixin box-shadow($offset-x, $offset-y, $blur-radius, $spread-radius, $color) {
+
+  -moz-box-shadow:  $offset-x $offset-y $blur-radius $spread-radius $color;
+  box-shadow:  $offset-x $offset-y $blur-radius $spread-radius $color;
+
+}
+
+// Color Scheme (This should probably be done in the bootstrap variables sass file :)
+
+$dark-1:  #212123;
+$dark-2:  #282d40;
+$dark-3:  #666;
+$dark-4:  #28282c;
+$light-1: #bddbf5;
+$light-2: #efefef;
+$light-3: #f9f9f9;
+
+// Jumbotron element
+.jumbotron {
+
+  background: $light-1;
+  color: $dark-1;
+  margin-bottom: 0;
+
+
+  h1 {
+    color: $dark-2;
+    font-size: 4em;
+    font-weight: 600;
+  }
+
+  .inner-header {
+    position: relative;
+    top: 20px;
+  }
+
+ }
+
+// Card element (used in the Portfolio Section)
+.card {
+
+  h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px $light-2 solid;
+  }
+
+  .card-block h4 {
+    background: $light-3;
+    border: 0;
+    color: $dark-3;
+    padding: 10px 0 10px 10px;
+  
+  }
+
+  .skills {
+      padding:  0;
+  }
+
+  .skills li {
+    border-bottom: 1px $light-2 solid;
+    line-height: 2em;
+    list-style-type: none;
+    padding: 10px 0 10px 10px;
+  }
+
+}
+
+// These classes are added the columns in the Card element for the portfolio section
+.portfolio-items:nth-child(even) {
+  animation-duration: 1s;
+  animation-name: slideInRight;
+}
+
+.portfolio-items:nth-child(odd) {
+  animation-duration: 1s;
+  animation-name: slideInLeft;
+}
+
+.thumbnail {
+    @include border-radius(0, all);
+}
+
+.caption .website-link {
+  font-size: .4em;
+}
+
+//Page Headers for the main seperators
+.page-header {
+
+  background: $dark-1 url('../../images/grid8.png') top left;
+  margin-top: 0;
+  padding: 100px 0;
+
+
+  h2 {
+    color: $light-1;
+  }
+
+ }
+
+// Lots and lots of styles for the navigation menu!
+.navbar-default {
+  // Normal State
+  .navbar-nav > li > a:link,
+  .navbar-nav > li > a:active,
+  .navbar-nav > li > a:visited {
+    color: $light-2;
+  }
+
+  .navbar-nav > li > a:hover {
+    color: $light-1;
+  }
+
+  // Active state */
+  .navbar-nav > .active > a:link, 
+  .navbar-nav > .active > a:active,
+  .navbar-nav > .active > a:visited {
+    background: none;
+    color: $light-1;
+  }
+
+  .navbar-nav > .active > a:hover {
+    background: none;
+    color: $light-1;
+  }
+
+  .navbar-toggle {
+    border-color: $dark-4;
+  }
+
+  .navbar-toggle:hover,
+  .navbar-toggle:focus {
+    background-color: $dark-4;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: $light-1;
+  }
+
+}
+
+.navbar {
+  
+  @include border-radius(0, all);
+  //@include box-shadow(0, 0, 20px, 5px, $light-1);
+  background: $dark-1 url('../../images/grid8.png') top left;
+  border-bottom: 1px $dark-2 solid;
+  margin-bottom: 0;
+
+
+ .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+ }
+
+ .navbar-nav a:link,
+ .navbar-nav a:active,
+ .navbar .navbar-nav a:visited {
+    color: $light-2;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+ }
+
+ .navbar-collapse {
+    border: 0;
+    border-color: none;
+    text-align: center;
+ }
+
+
+}
+
+/* Social Media Icons */
+
+.social-icons .icon {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.fa-4 {
+  font-size: 5em;
+}
+
+a > .fa-4 {
+  color: $light-1;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  .card {
+    padding: 0 10px;
+  }
+
+  .social-icons .icon:nth-child(1),
+  .social-icons .icon:nth-child(3) {
+    padding-right: 50px;
+    text-align: right;
+ }
+
+  .social-icons .icon:nth-child(2),
+  .social-icons .icon:nth-child(4) {
+    padding-left: 50px;
+    text-align: left;
+ }
+
+ .page-header {
+    padding: 50px 0;
+ }
+
+}
+
+
+/* Helper Classes */
+
+.make-fluid {
+  width: 100%;
+}
+
+.break-text {
+  display: block;
+}
+
+.word-wrap {
+  -ms-word-break: break-all;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+.hypenate {
+  font-style: normal;
+}
+
+.hypenate::before {
+    content: ' - ';
+  }
+
+.hypenate::after {
+    content: ' - ';
+}
+
+
+/* Misc Typography */
+
+
+p {
+  font-size: 1.2em;
+  line-height: 2;
+  padding: 10px 0;
+}
+
+
+.lead {
+  color: $dark-4;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+/* Other Misc Styles */
+
+.link-container {
+  padding-bottom: 20px;
+  border-bottom: 2px $light-2 solid;
+}
+
+.bg-warning {
+  padding: 10px;
+}

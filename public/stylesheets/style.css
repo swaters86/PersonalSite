@@ -1,0 +1,190 @@
+/*!
+ * Author: Steve Waters
+ *
+ * Date: 20161108
+ *
+ * Frameworks & Libraries: 
+ *  Google Font API
+ *	Normalize CSS: http://necolas.github.io/normalize.css
+ * 	FontAwesome: http://fontawesome.io
+ *  Bootstrap v3.3.7: http://getbootstrap.com 
+ *  AngularJS v1.5.8: https://angularjs.org
+ *  jQuery v3.1.0: http://jquery.com/download/
+ *  GulpJS: http://gulpjs.com/
+ *  JSStanrd: http://standardjs.com/rules.html
+ *
+*/
+.jumbotron {
+  background: #bddbf5;
+  color: #212123;
+  margin-bottom: 0; }
+  .jumbotron h1 {
+    color: #282d40;
+    font-size: 4em;
+    font-weight: 600; }
+  .jumbotron .inner-header {
+    position: relative;
+    top: 20px; }
+
+.card h3 {
+  padding-bottom: 10px;
+  border-bottom: 2px #efefef solid; }
+
+.card .card-block h4 {
+  background: #f9f9f9;
+  border: 0;
+  color: #666;
+  padding: 10px 0 10px 10px; }
+
+.card .skills {
+  padding: 0; }
+
+.card .skills li {
+  border-bottom: 1px #efefef solid;
+  line-height: 2em;
+  list-style-type: none;
+  padding: 10px 0 10px 10px; }
+
+.portfolio-items:nth-child(even) {
+  animation-duration: 1s;
+  animation-name: slideInRight; }
+
+.portfolio-items:nth-child(odd) {
+  animation-duration: 1s;
+  animation-name: slideInLeft; }
+
+.thumbnail {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0; }
+
+.caption .website-link {
+  font-size: .4em; }
+
+.page-header {
+  background: #212123 url("../../images/grid8.png") top left;
+  margin-top: 0;
+  padding: 100px 0; }
+  .page-header h2 {
+    color: #bddbf5; }
+
+.navbar-default .navbar-nav > li > a:link,
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:visited {
+  color: #efefef; }
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #bddbf5; }
+
+.navbar-default .navbar-nav > .active > a:link,
+.navbar-default .navbar-nav > .active > a:active,
+.navbar-default .navbar-nav > .active > a:visited {
+  background: none;
+  color: #bddbf5; }
+
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  color: #bddbf5; }
+
+.navbar-default .navbar-toggle {
+  border-color: #28282c; }
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #28282c; }
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #bddbf5; }
+
+.navbar {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background: #212123 url("../../images/grid8.png") top left;
+  border-bottom: 1px #282d40 solid;
+  margin-bottom: 0; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  .navbar .navbar-nav a:link,
+  .navbar .navbar-nav a:active,
+  .navbar .navbar .navbar-nav a:visited {
+    color: #efefef;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .navbar .navbar-collapse {
+    border: 0;
+    border-color: none;
+    text-align: center; }
+
+/* Social Media Icons */
+.social-icons .icon {
+  padding: 20px 0;
+  text-align: center; }
+
+.fa-4 {
+  font-size: 5em; }
+
+a > .fa-4 {
+  color: #bddbf5; }
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .card {
+    padding: 0 10px; }
+  .social-icons .icon:nth-child(1),
+  .social-icons .icon:nth-child(3) {
+    padding-right: 50px;
+    text-align: right; }
+  .social-icons .icon:nth-child(2),
+  .social-icons .icon:nth-child(4) {
+    padding-left: 50px;
+    text-align: left; }
+  .page-header {
+    padding: 50px 0; } }
+
+/* Helper Classes */
+.make-fluid {
+  width: 100%; }
+
+.break-text {
+  display: block; }
+
+.word-wrap {
+  -ms-word-break: break-all;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  word-wrap: break-word; }
+
+.hypenate {
+  font-style: normal; }
+
+.hypenate::before {
+  content: ' - '; }
+
+.hypenate::after {
+  content: ' - '; }
+
+/* Misc Typography */
+p {
+  font-size: 1.2em;
+  line-height: 2;
+  padding: 10px 0; }
+
+.lead {
+  color: #28282c;
+  font-weight: bold;
+  line-height: 2.5em; }
+
+/* Other Misc Styles */
+.link-container {
+  padding-bottom: 20px;
+  border-bottom: 2px #efefef solid; }
+
+.bg-warning {
+  padding: 10px; }

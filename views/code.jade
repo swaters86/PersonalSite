@@ -1,0 +1,18 @@
+div(id='code',class='container-fluid')
+  div(class='row') 
+   div(class='page-header')
+    h2(class='text-center text-uppercase') Code
+ div(class='container')
+  div(class='row code')
+   div(class='col-md-12')
+    p(class='lead') I've written quite a bit of code over the years at my previous employers, at USF when I took classes for C++ and Java, and during my free time at home. Here are a just a <i>few</i> public samples of this code from my <a href='https://github.com/swaters86' title='Visit Steven Waters Github Page'>Github</a> and <a href='https://gist.github.com/swaters86' title='Visit Steven Waters Gist Page'>Gist</a> pages. 
+  for codeItem in codeItems
+    div(class='link-container')
+     h3 #{codeItem.title}
+     p #{codeItem.description}
+     a(href='#{codeItem.link}',title='#{codeItem.link}',class='word-wrap') #{codeItem.link}
+
+    
+
+
+

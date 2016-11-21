@@ -1,0 +1,27 @@
+div(id='skills',class='container-fluid')
+  div(class='row')
+   div(class='page-header')
+    h2(class='text-center text-uppercase') Skills 
+ div(class='container')
+  div(class='row skills')
+   div(class='col-md-4')
+    div(class='card')
+     div(class='card-block')
+      h4 1-2 Years
+      ul(class='skills')
+       for skill in skills.skillsSet1
+        li= skill
+   div(class='col-md-4')
+    div(class='card')
+     div(class='card-block')
+      h4 2-6 Years
+      ul(class='skills')
+       for skill in skills.skillsSet2
+        li= skill
+   div(class='col-md-4')
+    div(class='card')
+     div(class='card-block')
+      h4 Still Learning/Want to Learn
+      ul(class='skills')
+       for skill in skills.skillsSet3
+        li= skill
