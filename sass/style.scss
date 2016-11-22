@@ -129,12 +129,12 @@ $light-3: #f9f9f9;
 // These classes are added the columns in the Card element via JS for the portfolio and code sections
 
   .portfolio-item, .code-item {
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-name: slideInDown;
   }
 
   .skill-item {
-    animation-duration: 1.5s;
+    animation-duration: 1s;
     animation-name: slideInUp;
   }
 

@@ -23,7 +23,7 @@ $(document).ready(function () {
 
     codeItem.css('visibility', 'hidden')
 
-    skillItem.css('visibility', 'hidden')
+    //skillItem.css('visibility', 'hidden')
 
     $('.navbar li').on('activate.bs.scrollspy', function () {
       var activeNavLink = $(this).find('a')
@@ -40,11 +40,13 @@ $(document).ready(function () {
         codeItem.addClass('code-item')
       }
 
+      /*
       if (activeNavLink.attr('href') === '#skills') {
         skillItem.css('visibility', 'visible')
 
         skillItem.addClass('skill-item')
       }
+      */
     })
   }
 })
