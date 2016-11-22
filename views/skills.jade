@@ -5,23 +5,26 @@ div(id='skills',class='container-fluid')
  div(class='container')
   div(class='row skills')
    div(class='col-md-4')
-    div(class='card')
-     div(class='card-block')
+    div(class='panel panel-default')
+     div(class='panel-heading')
       h4 1-2 Years
+     div(class='panel-body')
       ul(class='skills')
        for skill in skills.skillsSet1
-        li= skill
+        li #{skill}
    div(class='col-md-4')
-    div(class='card')
-     div(class='card-block')
+    div(class='panel panel-default')
+     div(class='panel-heading')
       h4 2-6 Years
+     div(class='panel-body')
       ul(class='skills')
        for skill in skills.skillsSet2
-        li= skill
+        li #{skill}
    div(class='col-md-4')
-    div(class='card')
-     div(class='card-block')
+    div(class='panel panel-default')
+     div(class='panel-heading')
       h4 Still Learning/Want to Learn
+     div(class='panel-body')
       ul(class='skills')
        for skill in skills.skillsSet3
-        li= skill
+        li #{skill}

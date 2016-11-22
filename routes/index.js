@@ -62,7 +62,16 @@ router.get('/', function (req, res, next) {
         'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
         'url': 'swaters86.github.io/portfolio/NCSPortal/index.html',
         'captionText': 'While working at NEWSCYCLE Solutions, I was asked to design a portal for our Salesforce site. I was asked to design one because of my expertise in HTML, CSS, and JavaScript'
-      }, {
+      },
+      {
+        'imgSrc': '../../images/portfolio_images/Inline_Style_Printer.png',
+        'imgAlt': 'A screenshot of a Node.js app that prints out incline styles that have been applied to elements on a page',
+        'url': 'http://inlinestyleprinter.azurewebsites.net/',
+        'captionTitle': 'Inline Style Printer App',
+        'captionText': 'This is a just a simple Node.js app I developed. It scrapes pages using the Cheerio library and print thems out on the page.'
+
+      },
+      {
         'imgSrc': '../../images/portfolio_images/Bespoke%26Co.png',
         'imgAlt': 'A screenshot of Bespoke & Co"s website from about 4 years ago',
         'url': 'http://bespokeandcofl.azurewebsites.net/',
@@ -70,7 +79,7 @@ router.get('/', function (req, res, next) {
         'captionText': 'This is an ASP.net site that I designed and developed from scratch using HTML, CSS, JavaScript, and jQuery. Note: this is from circa 2007-2009 so the design is a bit outdated and not responsive.'
       }, {
         'imgSrc': '../../images/portfolio_images/WoodlandWonders.png',
-        'imgAlt': 'Screenshot of WoodlandWonders.org website - Woodland Wonders is a non-profit organization for rehabilating injured and orphaned wildlife.',
+        'imgAlt': 'Screenshot of WoodlandWonders.org website - Woodland Wonders is non-profit organization for rehabilating injured and orphaned wildlife.',
         'url': 'http://woodlandwonders.org/',
         'captionTitle': 'Woodland Wonders',
         'captionText': 'This is a site I designed for an non-profit organization that my parents run for rehabilitating injured and orphaned wildlife. This site is actually based on a custom Wordpress theme that I developed called Bare Bones.'
@@ -89,6 +98,7 @@ router.get('/', function (req, res, next) {
       }, {
         'imgSrc': '../../images/portfolio_images/DCS.png',
         'imgAlt': 'Screenshot of Diabetic Charitable Services former website',
+        'url': 'http://diabeticservice.azurewebsites.net/',
         'captionTitle': 'Diabetic Charitable Services',
         'captionText': 'This is a static HTML, CSS, and JavaScript site I developed at Rapid Technology Solutions. This was actually a site I had to pump out in 8 hours because it was for a time-sensitive charity race promotion.'
       }

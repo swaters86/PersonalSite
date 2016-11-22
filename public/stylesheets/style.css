@@ -11,7 +11,7 @@
  *  AngularJS v1.5.8: https://angularjs.org
  *  jQuery v3.1.0: http://jquery.com/download/
  *  GulpJS: http://gulpjs.com/
- *  JSStanrd: http://standardjs.com/rules.html
+ *  JSStandard: http://standardjs.com/rules.html
  *
 */
 .jumbotron {
@@ -26,45 +26,26 @@
     position: relative;
     top: 20px; }
 
-.card h3 {
-  padding-bottom: 10px;
-  border-bottom: 2px #efefef solid; }
-
-.card .card-block h4 {
-  background: #f9f9f9;
-  border: 0;
-  color: #666;
-  padding: 10px 0 10px 10px; }
-
-.card .skills {
+.panel .skills {
   padding: 0; }
+  .panel .skills li {
+    border-bottom: 1px #efefef solid;
+    line-height: 2em;
+    list-style-type: none;
+    padding: 10px 0 10px 10px; }
+  .panel .skills li:last-child {
+    border: none; }
 
-.card .skills li {
-  border-bottom: 1px #efefef solid;
-  line-height: 2em;
-  list-style-type: none;
-  padding: 10px 0 10px 10px; }
+.portfolio-item, .code-item {
+  animation-duration: 1.5s;
+  animation-name: slideInDown; }
 
-.portfolio-items:nth-child(even) {
-  animation-duration: 1s;
-  animation-name: slideInRight; }
-
-.portfolio-items:nth-child(odd) {
-  animation-duration: 1s;
-  animation-name: slideInLeft; }
-
-.thumbnail {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  border-radius: 0; }
-
-.caption .website-link {
-  font-size: .4em; }
+.skill-item {
+  animation-duration: 1.5s;
+  animation-name: slideInUp; }
 
 .page-header {
-  background: #212123 url("../../images/grid8.png") top left;
+  background-color: #212123;
   margin-top: 0;
   padding: 100px 0; }
   .page-header h2 {
@@ -104,7 +85,7 @@
   -o-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  background: #212123 url("../../images/grid8.png") top left;
+  background-color: #212123;
   border-bottom: 1px #282d40 solid;
   margin-bottom: 0; }
   .navbar .navbar-nav {

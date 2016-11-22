@@ -11,7 +11,7 @@
  *  AngularJS v1.5.8: https://angularjs.org
  *  jQuery v3.1.0: http://jquery.com/download/
  *  GulpJS: http://gulpjs.com/
- *  JSStanrd: http://standardjs.com/rules.html
+ *  JSStandard: http://standardjs.com/rules.html
  *
 */
 
@@ -100,58 +100,51 @@ $light-3: #f9f9f9;
 
  }
 
-// Card element (used in the Portfolio Section)
-.card {
-
-  h3 {
-    padding-bottom: 10px;
-    border-bottom: 2px $light-2 solid;
-  }
-
-  .card-block h4 {
-    background: $light-3;
-    border: 0;
-    color: $dark-3;
-    padding: 10px 0 10px 10px;
-  
-  }
+// Card element (used in the Portfolio and Skills section)
+.panel {
 
   .skills {
-      padding:  0;
+
+    padding:  0;
+  
+    li {
+
+      border-bottom: 1px $light-2 solid;
+      line-height: 2em;
+      list-style-type: none;
+      padding: 10px 0 10px 10px;
+
+    }
+    
+    li:last-child {
+
+      border: none; 
+
+    }
+
   }
 
-  .skills li {
-    border-bottom: 1px $light-2 solid;
-    line-height: 2em;
-    list-style-type: none;
-    padding: 10px 0 10px 10px;
+}
+
+// These classes are added the columns in the Card element via JS for the portfolio and code sections
+
+  .portfolio-item, .code-item {
+    animation-duration: 1.5s;
+    animation-name: slideInDown;
   }
 
-}
+  .skill-item {
+    animation-duration: 1.5s;
+    animation-name: slideInUp;
+  }
 
-// These classes are added the columns in the Card element for the portfolio section
-.portfolio-items:nth-child(even) {
-  animation-duration: 1s;
-  animation-name: slideInRight;
-}
 
-.portfolio-items:nth-child(odd) {
-  animation-duration: 1s;
-  animation-name: slideInLeft;
-}
-
-.thumbnail {
-    @include border-radius(0, all);
-}
-
-.caption .website-link {
-  font-size: .4em;
-}
 
 //Page Headers for the main seperators
 .page-header {
 
-  background: $dark-1 url('../../images/grid8.png') top left;
+  //background: $dark-1 url('../../images/grid8.png') top left;
+  background-color: $dark-1;
   margin-top: 0;
   padding: 100px 0;
 
@@ -207,7 +200,8 @@ $light-3: #f9f9f9;
   
   @include border-radius(0, all);
   //@include box-shadow(0, 0, 20px, 5px, $light-1);
-  background: $dark-1 url('../../images/grid8.png') top left;
+  //background: $dark-1 url('../../images/grid8.png') top left;
+  background-color: $dark-1;
   border-bottom: 1px $dark-2 solid;
   margin-bottom: 0;
 
