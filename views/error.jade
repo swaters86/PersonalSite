@@ -1,6 +1,18 @@
 extends layout
 
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+ div(id='error',class='container-fluid')
+  div(class='row')
+   div(class='page-header') 
+    h2(class='text-center text-uppercase') 404 Not Found?
+ div(class='container')
+  div(class='row')
+   div(class='row-md-12')
+    p(class='text-center') How did you get here? You're not suppose to be here :) Please <a href='mailto:swaters86@gmail.com'>contact Steve</a> with more details on how you received the below message.
+    div(class='panel panel-default')
+     div(class='panel-body')
+      pre #{error.stack}
+     h2(class='text-center')
+      a(onclick='window.history.back();',title='Click to go back to where you were') Go Back to where you were
+  
+
