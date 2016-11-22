@@ -60,7 +60,7 @@ router.get('/', function (req, res, next) {
         'imgSrc': '../../images/portfolio_images/NCS_Portal.png',
         'imgAlt': 'A screenshot NEWSCYCLE Digital Salesforce Portal',
         'captionTitle': 'NEWSCYCLE Digital Salesforce Portal',
-        'url': 'swaters86.github.io/portfolio/NCSPortal/index.html',
+        'url': 'http://swaters86.github.io/portfolio/NCSPortal/index.html',
         'captionText': 'While working at NEWSCYCLE Solutions, I was asked to design a portal for our Salesforce site. I was asked to design one because of my expertise in HTML, CSS, and JavaScript'
       },
       {
