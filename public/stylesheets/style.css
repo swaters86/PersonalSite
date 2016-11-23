@@ -37,11 +37,11 @@
     border: none; }
 
 .portfolio-item, .code-item {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: slideInDown; }
 
 .skill-item {
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-name: slideInUp; }
 
 .page-header {
