@@ -17,13 +17,13 @@ $(document).ready(function () {
 
     var codeItem = $('.code').find('.panel')
 
-    var skillItem = $('.skills').find('.panel')
+    // var skillItem = $('.skills').find('.panel')
 
     portfolioItem.css('visibility', 'hidden')
 
     codeItem.css('visibility', 'hidden')
 
-    //skillItem.css('visibility', 'hidden')
+    // skillItem.css('visibility', 'hidden')
 
     $('.navbar li').on('activate.bs.scrollspy', function () {
       var activeNavLink = $(this).find('a')
